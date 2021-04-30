@@ -16,7 +16,7 @@ function App() {
         <Form
           quantity = {quantity}
           saveQuantity = {saveQuantity}
-        />
+         />
       </div>
     </Fragment>
   );
