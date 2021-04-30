@@ -9,7 +9,9 @@ function App() {
     
   return (
     <Fragment>
-      <Header></Header>
+      <Header
+        titulo = "Cotizador de Prestamos"
+      />
       <div className="container">
         <Form
           quantity = {quantity}
