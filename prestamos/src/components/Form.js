@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Formulario = () => {
+const Form = ({quantity,saveQuantity}) => {
     return ( 
         <form>
+            {quantity}
           <div className="row">
               <div>
                   <label>Cantidad Prestamo</label>
@@ -10,6 +11,7 @@ const Formulario = () => {
                       className="u-full-width" 
                       type="number" 
                       placeholder="Ejemplo: 3000" 
+                      onChange= { e => saveQuantity( parseInt( e.target.value )) }
                   />
               </div>
               <div>
@@ -36,4 +38,4 @@ const Formulario = () => {
   );
 }
  
-export default Formulario;
+export default Form;
