@@ -12,8 +12,8 @@ function App() {
       <Header></Header>
       <div className="container">
         <Form
-        quantity = {quantity}
-        saveQuantity={saveQuantity}
+          quantity = {quantity}
+          saveQuantity= {saveQuantity}
         />
       </div>
     </Fragment>
