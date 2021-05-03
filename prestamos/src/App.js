@@ -6,6 +6,7 @@ function App() {
 
     //Definiendo el state
     const [quantity, saveQuantity] = useState(0);
+    const [term, saveTerm] = useState(0);
     
   return (
     <Fragment>
@@ -16,6 +17,8 @@ function App() {
         <Form
           quantity = {quantity}
           saveQuantity = {saveQuantity}
+          term = {term}
+          saveTerm = {saveTerm}
         />
       </div>
     </Fragment>
