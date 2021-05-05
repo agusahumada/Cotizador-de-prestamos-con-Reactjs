@@ -6,7 +6,7 @@ function App() {
 
     //Definiendo el state
     const [quantity, saveQuantity] = useState(0);
-    const [term, saveTerm] = useState(0);
+    const [term, saveTerm] = useState("");
     
   return (
     <Fragment>

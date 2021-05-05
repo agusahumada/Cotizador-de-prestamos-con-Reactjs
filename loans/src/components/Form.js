@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Form = ({quantity,saveQuantity,term,saveTerm}) => {
+
+    //define state
+    const [ error, saveError ] = useState(false);
+
+    //When user submits
+    const calculateLoan = e => {
+        e.preventDefault();
+        
+        //validate
+        if ( quantity === 0 || term === '') {
+            saveError(true);
+        }
+
+        //make the quote
+    }
+
     return ( 
-        <form>
+        <form onSubmit = { calculateLoan }>
           <div className="row">
               <div>
                   <label>Cantidad Prestamo</label>
