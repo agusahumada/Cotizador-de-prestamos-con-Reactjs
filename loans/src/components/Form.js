@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react';
+import { calculateTotal } from '../helpers';
 
 const Form = ({quantity,saveQuantity,term,saveTerm}) => {
 
@@ -19,6 +20,7 @@ const Form = ({quantity,saveQuantity,term,saveTerm}) => {
         saveError(false);
 
         //make the quote
+        calculateTotal(quantity, term);
     }
 
     return ( 
