@@ -15,5 +15,32 @@ export function calculateTotal(quantity, term) {
     }else{
         totalQuantity = quantity * .10;
     }
-    console.log(totalQuantity);
+
+    //Calculate the term
+    // 3 = 5%
+    // 6 = 10%
+    // 12 = 15%
+    // 24 = 20%
+
+    let totalTerm = 0;
+
+    switch (term) {
+        case 3:
+            totalTerm = quantity * .05;
+            break;
+        case 6:
+            totalTerm = quantity * .10;
+            break;
+        case 12:
+            totalTerm = quantity * .15;
+            break;
+        case 24:
+            totalTerm = quantity * .20;
+            break;
+    
+        default:
+            break;
+    }
+
+    return totalTerm + totalQuantity + quantity;
 }
