@@ -20,7 +20,9 @@ const Form = ({quantity,saveQuantity,term,saveTerm}) => {
         saveError(false);
 
         //make the quote
-        calculateTotal(quantity, term);
+        const total = calculateTotal(quantity, term);
+        console.log(total);
+
     }
 
     return ( 
