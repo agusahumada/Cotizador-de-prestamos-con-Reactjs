@@ -1,8 +1,9 @@
 import React, { Fragment, useState } from 'react';
 import { calculateTotal } from '../helpers';
 
-const Form = ({quantity,saveQuantity,term,saveTerm}) => {
+const Form = (props) => {
 
+    const {quantity,saveQuantity,term,saveTerm, total, saveTotal} = props;
     //define state
     const [ error, saveError ] = useState(false);
 
@@ -21,7 +22,9 @@ const Form = ({quantity,saveQuantity,term,saveTerm}) => {
 
         //make the quote
         const total = calculateTotal(quantity, term);
-        console.log(total);
+        
+        //Once calculated, saveTotal
+        saveTotal(total);
 
     }
 
