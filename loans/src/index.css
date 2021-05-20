@@ -30,10 +30,10 @@ form, .mensajes {
   max-width: 600px;
   margin: 0 auto;
 }
-.mensajes {
+.messages {
   text-align: center;
 }
-.resultado {
+.result {
   border: 2px solid #00b0d7;
   padding: 3rem 0;
 }
