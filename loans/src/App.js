@@ -15,7 +15,11 @@ function App() {
     if (total === 0) {
       component = <Message/>
     }else{
-      component = <Result/>
+      component = <Result
+                    total = {total}
+                    term = {term}
+                    quantity = {quantity}
+                  />
     }
     
   return (

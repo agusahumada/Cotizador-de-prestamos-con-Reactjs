@@ -22,10 +22,10 @@ h1 {
   padding: 1rem;
   border-radius: 1rem;
   margin-top: 2rem;
-  height: 80vh;
+  height: 100vh;
 }
 
-form, .mensajes {
+form, .messages {
   padding: 2rem;
   max-width: 600px;
   margin: 0 auto;
@@ -56,6 +56,6 @@ input[type="submit"]:disabled{
   max-width: 600px;
   margin: 0 auto;
 }
-.resultado p {
+.result p {
   margin: 0;
 }
