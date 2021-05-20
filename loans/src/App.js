@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Form from './components/Form';
 import Message from './components/Message';
 import Result from './components/Result';
+import Spinner from './components/Spinner';
 
 function App() {
 
@@ -10,9 +11,13 @@ function App() {
     const [quantity, saveQuantity] = useState(0);
     const [term, saveTerm] = useState("");
     const [total, saveTotal] = useState(0);
+    const [loading, saveLoading] = useState(false);
 
     let component;
-    if (total === 0) {
+
+    if (loading) {
+      component = <Spinner/>
+    } else if (total === 0) {
       component = <Message/>
     }else{
       component = <Result
@@ -35,6 +40,7 @@ function App() {
           saveTerm = {saveTerm}
           total = {total}
           saveTotal = {saveTotal}
+          saveLoading = {saveLoading}
         />
         <div className="messages">
           {component}
