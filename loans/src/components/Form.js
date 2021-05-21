@@ -3,7 +3,7 @@ import { calculateTotal } from '../helpers';
 
 const Form = (props) => {
 
-    const {quantity,saveQuantity,term,saveTerm, total, saveTotal, saveLoading} = props;
+    const {quantity,saveQuantity,term,saveTerm, saveTotal, saveLoading} = props;
     //define state
     const [ error, saveError ] = useState(false);
 
@@ -32,7 +32,7 @@ const Form = (props) => {
 
             // disable spinner
             saveLoading(false);
-        }, 5000);
+        }, 3000);
 
     }
 
