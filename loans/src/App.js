@@ -38,7 +38,6 @@ function App() {
           saveQuantity = {saveQuantity}
           term = {term}
           saveTerm = {saveTerm}
-          total = {total}
           saveTotal = {saveTotal}
           saveLoading = {saveLoading}
         />
